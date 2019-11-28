@@ -1,7 +1,4 @@
-const inquirer=require("inquirer");
-const Manager=require("./class-manager");
 
-function  managerQuestions(){
 const managerQuestion = [
     {
         message:'What is your team name ?',
@@ -25,13 +22,6 @@ const managerQuestion = [
       }
 ];
 
-inquirer.prompt(managerQuestion)
-.then(function(managerQuestion){
-    let manager1 = new Manager(managerQuestion.managerName,managerQuestion.managerID,"Manager",managerQuestion.managerEmail,"",managerQuestion.managerOffNum);
-    console.log(manager1);
-});
-};
-function addMembers(){
 const addMember =[
     {
     message: "Would you like to add another member ?",
@@ -39,8 +29,7 @@ const addMember =[
     }
     
 ];
-};
-function engQuestions(){
+
 const engineerQuestions = [
     {
         message: 'Enter Engineers Name:',
@@ -59,8 +48,8 @@ const engineerQuestions = [
         name: 'engineerGithub'
       }
 ]
-};
-function internQues(){
+
+
 const internQuestions = [
     {
         message: 'Enter Intern’s Name:',
@@ -79,9 +68,8 @@ const internQuestions = [
         name: 'internSchool'
       }
 ];
-};
-module.exports = managerQuestions;
-module.exports = internQues;
-module.exports = engQuestions;
-module.exports = addMembers;
+module.exports = managerQuestion;
+module.exports = internQuestions;
+module.exports = engineerQuestions;
+module.exports = addMember;
 module.exports = managerQuestions;
