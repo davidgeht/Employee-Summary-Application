@@ -16,7 +16,7 @@ inquirer.prompt(managerQuestion)
 .then(function(managerQuestion){
 
     //creating a new manager from the manager constructor class 
-    var newManager = new Manager(managerQuestions.name,managerQuestions.id,managerQuestions.email,managerQuestions.officeNumber);
+    var newManager = new Manager(managerQuestion.name,managerQuestion.id,managerQuestion.email,managerQuestion.officeNumber);
               
     var initialContent = `
     <!DOCTYPE html>
@@ -183,3 +183,5 @@ async function newIntern(){
         newMember()
     })
 };
+
+module.exports = teamInfo;
