@@ -1,7 +1,7 @@
-const inquirer = require("inquirer");
-const managerQuestions =require("./library/questions");
+
+const teamInfo =require("./library/promptques");
 
 function init(){
-     managerQuestions();
+     teamInfo();
 }
 init();

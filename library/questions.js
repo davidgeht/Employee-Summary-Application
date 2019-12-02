@@ -2,74 +2,77 @@
 const managerQuestion = [
     {
         message:'What is your team name ?',
-        name:'teamName'
+        name:"teamName"
     },
     {
         message:'What is the managers name ?',
-        name: "managerName"
+        name: "name"
       },
       {
           message:'What is the managers ID ?',
-          name:'managerID'
+          name:'ID'
       },
       {
           message:'What is the managers email?',
-          name:'managerEmail'
+          name:'Email'
       },
       {
           message:'What is the managers office number?',
-          name:'managersOffNum'
+          name:'officeNum'
       }
 ];
 
 const addMember =[
     {
+    type: 'list',
     message: "Would you like to add another member ?",
-    choices:['Engineer','Intern','I dont want to add any more members']
+    choices:['Engineer','Intern','I dont want to add any more members'],
+    name: 'choice'
     }
     
 ];
 
-const engineerQuestions = [
+const engineerQuestion = [
     {
         message: 'Enter Engineers Name:',
-        name: 'engineerName'
+        name: 'name'
       },
       {
         message: 'What is the engineers id?',
-        name: 'engineerID'
+        name: 'ID'
       },
       {
-        message: 'What is the managers email?',
-        name: 'engineerEmail'
+        message: 'What is the engineers email?',
+        name: 'email'
       },
       {
         message: 'What is engineers Github username?',
-        name: 'engineerGithub'
+        name: 'github'
       }
 ]
 
 
-const internQuestions = [
+const internQuestion = [
     {
-        message: 'Enter Intern’s Name:',
-        name: 'internName'
+        message: 'Enter interns name:',
+        name: 'name'
       },
       {
         message: 'What is the intern id?',
-        name: 'internId'
+        name: 'ID'
       },
       {
-        message: 'What is the managers email?',
-        name: 'engineerEmail'
+        message: 'What is the interns email?',
+        name: 'email'
       },
       {
-        message: 'What is there interns office number?',
-        name: 'internSchool'
+        message: 'What school did the Intern Attend?',
+        name: 'school'
       }
 ];
-module.exports = managerQuestion;
-module.exports = internQuestions;
-module.exports = engineerQuestions;
-module.exports = addMember;
-module.exports = managerQuestions;
+module.exports = {
+    managerQuestion,
+    internQuestion,
+    engineerQuestion,
+    addMember
+};
