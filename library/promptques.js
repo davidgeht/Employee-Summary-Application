@@ -122,7 +122,7 @@ inquirer.prompt(managerQuestion)
 </html>
             `;
             // end html output and open in default browser 
-            fs.appendFileSync(`./output/Team_profile`, lastContent);
+            fs.appendFileSync(`./output/Team_profile.html`, lastContent);
             open('./output/Team_profile.html');
 
         };
