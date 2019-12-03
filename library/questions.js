@@ -4,7 +4,7 @@ const managerQuestion = [
   {
       message: "Welcome to creating your TEAM - Enter your Team Name : ",
       name: "teamName", 
-      default: "Google DEV",
+      default: "Dunder Mifflin",
       type: "input",
       validate: function(value){
         var string = value.match(/^\s*\S+.*/);
@@ -18,7 +18,7 @@ const managerQuestion = [
   {
       message: "Enter Managers Name : ",
       name: "name",
-      default: "Wayne Gretzky",
+      default: "Michael Scott",
       type: "input",
       validate: function(value){
         var string = value.match(/^\s*\S+.*/);
@@ -42,7 +42,7 @@ const managerQuestion = [
     {
       message: "What is the Managers email address ? ",
       name: "email",
-      default:"johnsmith@gmail.com",
+      default:"michael.gary.scott@gmail.com",
       type:"input",
       validate: function(value){
         var data =value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
@@ -69,7 +69,7 @@ const managerQuestion = [
       }
   
     }
-  ]
+  ];
   
   // Question prompts to add new Members
   
@@ -80,7 +80,7 @@ const managerQuestion = [
         choices: ['Engineer', 'Intern', 'NO'],
         name: "choice"
     }
-  ]
+  ];
   
   // Question prompts to create an Engineer 
   
@@ -89,7 +89,7 @@ const managerQuestion = [
   {
       message: "Enter Engineers Name : ",
       name: "name",
-      default:"Lebron James",
+      default:"Dwight Schrute",
       type: "input",
       validate: function(value){
         var string = value.match(/^\s*\S+.*/);
@@ -114,7 +114,7 @@ const managerQuestion = [
     {
       message: "What is the Engineers email address ? ",
       name: "email",
-      default:"bobsaget@gmail.com",
+      default:"shrutefarms@gmail.com",
       type:"input",
       validate: function(value){
         var data =value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
@@ -128,7 +128,7 @@ const managerQuestion = [
     },
     {
       message: "What is Engineers Github username ? ",
-      name: "github",
+      name: "gitHub",
       default:"git",
       type: "input",
       validate: function(value){
@@ -140,7 +140,7 @@ const managerQuestion = [
         }
       }
     }
-  ]
+  ];
   
   // Question prompts to create an Intern 
   
@@ -149,7 +149,7 @@ const managerQuestion = [
   {
       message: "Enter Intern's Name : ",
       name: "name",
-      default:"John Smith",
+      default:"Ryan Howard",
       type: "input",
       validate: function(value){
         var string = value.match(/^\s*\S+.*/);
