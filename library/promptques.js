@@ -145,7 +145,7 @@ async function newEngineer(){
                     <ul class="list-group">
                         <li class="list-group-item">ID : ${newEngineer.getId()}</li>
                         <li class="list-group-item">Email : <a href="mailto:${newEngineer.getEmail()}">${newEngineer.getEmail()}</a></li>
-                        <li class="list-group-item">Github : <a href="https://github.com/${newEngineer.getGitHub()}" target="_blank">${newEngineer.getGitHub()}</a></li>
+                        <li class="list-group-item">Github : <a href="https://github.com/${newEngineer.getGithub()}" target="_blank">${newEngineer.getGithub()}</a></li>
                     </ul>
             </div>  
     
